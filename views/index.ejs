@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+    <header>
+        <img class="banner" src="/Users/helpdesk/Documents/WEB DESIGN/Banner.jpg" />
+
+
+
+
+    </header>
+    <div class="flex-space">
+        <h1>
+            Tom's Site
+        </h1>
+        <!-- <img src="http://headwaters.org/wp-content/uploads/2011/10/BIOPic.jpg" /> -->
+        <a href="index2.html">Dog Breed Page</a>
+    </div>
+
+    <ul class="quotes">
+        <% for(var i=0; i<quotes.length; i++) {%>
+          <li class="quote">
+            <span><%= quotes[i].name %></span>
+            <span><%= quotes[i].quote %></span>
+          </li>
+        <% } %>
+      </ul>
+
+
+    <form action="/quotes" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="quote" name="quote">
+        <button type="submit">Submit</button>
+      </form>
+      
+    <footer>
+
+
+
+
+
+    </footer>
+</body>
+</html>
